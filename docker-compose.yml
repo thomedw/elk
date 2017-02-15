@@ -1,4 +1,5 @@
 portainer:
+  restart: 'always'
   image: portainer/portainer
   ports:
     - "9000:9000"
