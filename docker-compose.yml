@@ -12,3 +12,4 @@ logspout:
   volumes:
     - "/var/run/docker.sock:/var/run/docker.sock"
   command: syslog://logs5.papertrailapp.com:28037
+  net: host
