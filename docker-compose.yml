@@ -11,5 +11,5 @@ logspout:
   image: gliderlabs/logspout
   volumes:
   - "/var/run/docker.sock:/var/run/docker.sock"
-  - "/etc/hostname:/etc/hostname"
+  - "/etc/hostname:/etc/hostname:ro"
   command: syslog://logs5.papertrailapp.com:28037
