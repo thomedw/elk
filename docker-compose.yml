@@ -1,6 +1,4 @@
-elk:
-  image: sebp/elk
+portainer:
+  image: portainer/portainer
   ports:
-    - "5601:5601"
-    - "9200:9200"
-    - "5044:5044"
+    - "9000:9000"
