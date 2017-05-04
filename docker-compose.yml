@@ -1,10 +1,10 @@
-portainer:
-  restart: 'always'
-  image: portainer/portainer
-  volumes:
-    - "/var/run/docker.sock:/var/run/docker.sock"
-  ports:
-    - "9000:9000"
+#portainer:
+#  restart: 'always'
+#  image: portainer/portainer
+#  volumes:
+#    - "/var/run/docker.sock:/var/run/docker.sock"
+#  ports:
+#    - "9000:9000"
 
 logspout:
   restart: 'always'
