@@ -11,9 +11,10 @@ logspout:
   image: gliderlabs/logspout
   volumes:
   - "/var/run/docker.sock:/var/run/docker.sock"
-  command: syslog://logs5.papertrailapp.com:28037
+  command: syslog+tcp://logs-01.loggly.com:514
   environment:
   - SYSLOG_HOSTNAME=${SYSLOG_HOSTNAME}
+  - SYSLOG_STRUCTURED_DATA="8c5c040d-5ffd-4c37-b361-361ba21e1fe3@41058"
 
 #docker-gc:
 #  restart: 'always'
